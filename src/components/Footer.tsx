@@ -57,10 +57,10 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 Portfolio. All rights reserved.
+              © 2025 Portfolio. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm flex items-center gap-1">
-              Made with <Heart className="h-4 w-4 text-red-500" /> using React & Modern Web Technologies
+              Made with <Heart className="h-4 w-4 text-red-500" /> Naski Project
             </p>
           </div>
         </div>
