@@ -11,7 +11,7 @@ const WhatsAppChat = () => {
   const [step, setStep] = useState(1); // 1: intro, 2: name input, 3: message input
 
   // Replace with your actual WhatsApp number (without + sign)
-  const whatsappNumber = "1234567890"; // Replace with your WhatsApp number
+  const whatsappNumber = "+6282233240254"; // Replace with your WhatsApp number
 
   const handleSendToWhatsApp = () => {
     const fullMessage = `Hi! My name is ${name}. ${message}`;
