@@ -7,7 +7,7 @@ const navItems = [
   { label: "Home", path: "/" },
   { label: "Gallery", path: "/gallery" },
   { label: "Projects", path: "/projects" },
-  { label: "Contact", href: "#contact" }
+  { label: "Contact", href: "/contact" }
 ];
 
 const Navigation = () => {

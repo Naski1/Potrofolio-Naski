@@ -23,12 +23,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <div className="space-y-2">
               {['Gallery', 'Projects', 'About', 'Contact'].map((link) => (
-                <button
-                  key={link}
-                  className="block text-muted-foreground hover:text-primary smooth-transition"
-                >
-                  {link}
-                </button>
+          <button
+            key={link}
+            className="block text-muted-foreground hover:text-primary smooth-transition"
+          >
+            {link}
+          </button>
               ))}
             </div>
           </div>
@@ -40,14 +40,20 @@ const Footer = () => {
               Ready to work together? Drop me a line and let's create something extraordinary.
             </p>
             <div className="flex gap-3">
+              <a
+          href="https://github.com/Naski1"
+          target="_blank"
+          rel="noopener noreferrer"
+              >
+          <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
+            <Github className="h-5 w-5" />
+          </Button>
+              </a>
               <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
-                <Github className="h-5 w-5" />
+          <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
-                <Linkedin className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
-                <Mail className="h-5 w-5" />
+          <Mail className="h-5 w-5" />
               </Button>
             </div>
           </div>

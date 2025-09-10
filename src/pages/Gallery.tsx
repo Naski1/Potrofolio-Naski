@@ -6,23 +6,23 @@ import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppChat from "@/components/WhatsAppChat";
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/galery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 
 const galleryItems = [
   {
-    id: 1,
-    title: "Abstract Composition",
-    category: "Digital Art",
-    image: gallery1,
-    description: "Modern geometric patterns with flowing gradients that represent the harmony between chaos and order in digital spaces.",
-    technologies: ["Photoshop", "Illustrator", "Cinema 4D"],
-    year: "2024",
-    client: "Personal Project",
-    details: "This piece explores the intersection of geometric precision and organic flow, creating a visual metaphor for the balance between structure and creativity in design."
-  },
+  id: 1,
+  title: "Pendakian Gunung Bokong",
+  category: "Adventure & Travel",
+  image: gallery1,
+  description: "Momen kebersamaan saat mencapai puncak Gunung Bokong dengan ketinggian 1745 mdpl, penuh semangat, persahabatan, dan rasa syukur.",
+  technologies: ["Hiking", "Camping Gear", "Photography"],
+  year: "2025",
+  client: "Personal Journey",
+  details: "Dokumentasi perjalanan pendakian menuju puncak Gunung Bokong. Foto ini diambil saat tim pendaki berhasil sampai ke puncak, menandai pencapaian setelah menempuh jalur yang penuh tantangan. Selain menikmati pemandangan, momen ini juga menjadi simbol kebersamaan, perjuangan, dan keindahan alam Indonesia."
+},
   {
     id: 2,
     title: "Digital Landscape",
@@ -125,7 +125,6 @@ const Gallery = () => {
                       <div className="flex justify-between items-end">
                         <div>
                           <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                          <p className="text-sm text-muted-foreground">{item.description}</p>
                         </div>
                         <div className="flex gap-2">
                           <Button size="icon" variant="secondary" className="bg-glass backdrop-blur-sm">
@@ -228,10 +227,10 @@ const Gallery = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                    {/* <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       View Full Size
-                    </Button>
+                    </Button> */}
                     <Button variant="outline">
                       <Download className="h-4 w-4 mr-2" />
                       Download

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroImage from "@/assets/header.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -54,9 +54,15 @@ const Hero = () => {
             
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
-              <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
+               <a
+          href="https://github.com/Naski1"
+          target="_blank"
+          rel="noopener noreferrer"
+              >
+                <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
                 <Github className="h-5 w-5" />
-              </Button>
+                </Button>
+              </a>
               <Button variant="ghost" size="icon" className="hover:text-primary smooth-transition">
                 <Linkedin className="h-5 w-5" />
               </Button>
