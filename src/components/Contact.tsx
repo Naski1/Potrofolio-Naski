@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 
-const kontak = () => {
+const Contact = () => {
   return (
     <section id="contact" className="py-24 relative">
       {/* Background Gradient */}
@@ -143,4 +143,4 @@ const kontak = () => {
   );
 };
 
-export default kontak;
+export default Contact;

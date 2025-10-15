@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
-import path from "path";
 
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Gallery", path: "/gallery" },
   { label: "Projects", path: "/projects" },
-  { label: "Contact", path: "/contact" }
+  { label: "Contact", href: "/contact" }
 ];
 
 const Navigation = () => {
